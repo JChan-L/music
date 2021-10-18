@@ -1,0 +1,148 @@
+.m-top {
+	width: 100%;
+	height: 70px;
+	background-color: #242424;
+}
+
+.top {
+	width: 1100px;
+	height: 70px;
+	margin: 0 auto;
+	color: #ccc;
+	line-height: 70px;
+}
+
+.m-top .top .logo {
+	float: left;
+}
+
+.m-nav li {
+	float: left;
+	padding: 0 20px;
+}
+
+.m-srch {
+	float: left;
+	width: 110px;
+	height: 32px;
+}
+
+.m-srch input {
+	background-image: url(/img/search.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	box-sizing: border-box;
+	width: 15em;
+	height: 95%;
+	border-radius: 32px;
+	padding: 0px 30px;
+	position: relative;
+}
+
+.signIn {
+	float: left;
+	margin-left: 115px;
+	width: 50px;
+	height: 70px;
+}
+
+.signIn button {
+	width: 6em;
+	height: 1.5rem;
+	border-radius: 30px;
+}
+
+#listSongs {
+	margin: 18px 320px;
+	width: 860px;
+}
+
+#search_result li {
+	margin-top: 10px;
+	font-size: 18px;
+	counter-increment: index;
+	position: relative;
+	border-bottom: 1.5px dashed #ccc;
+	border-left: 3px solid #008c8c;
+	padding-left: 10px;
+}
+
+#search_result li:nth-of-type(even) {
+	background: rgb(203, 212, 216);
+}
+
+#search_result li::before {
+	position: absolute;
+	left: -32px;
+	content: counter(index);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: top;
+	font-size: 15px;
+	color: #fff;
+	background: #008c8c;
+	margin-right: 12px;
+}
+
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 70px;
+	right: 230px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #008c8c;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#topBtn:hover {
+	background-color: #555;
+}
+
+.playProgress {
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	bottom: 0px;
+	background-color: #ccc;
+	/* 242424 */
+}
+
+.playProgress .control {
+	width: 100%;
+	height: 100%;
+}
+
+.playProgress .control .left {
+	position: relative;
+	top: 5px;
+	left: 15%;
+	cursor: pointer;
+}
+
+.playProgress .control .left a img {
+	float: left;
+}
+
+.playProgress .control .center a img {
+	float: left;
+	position: relative;
+	top: 5px;
+	left: 15%;
+	margin-left: 10px;
+}
+
+.playProgress .control .right a img {
+	position: relative;
+	top: 5px;
+	left: 15%;
+	margin-left: 7px;
+	float: left;
+}
