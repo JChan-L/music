@@ -21,7 +21,7 @@ const audio = new Audio();
 //没有远程播放、歌手
 function playSong(id) {
 
-	fetch("http://hawav.cn:3000/song/url?br=320000&id=" + id)
+	fetch("http://localhost:3000/song/url?br=320000&id=" + id)
 		.then((res) => res.json())
 		.then((def) => def.data[0].url)
 		.then((url) => {
@@ -60,7 +60,7 @@ function search(kw) {
 	const ol = document.getElementById("search_result");
 	ol.innerHTML = "";
 
-	fetch("http://hawav.cn:3000/search?keywords=" + kw)
+	fetch("http://localhost:3000/search?keywords=" + kw)
 		.then((res) => res.json())
 		.then((res) => res.result.songs)
 		.then((songs) => songs.map((s) => ({ id: s.id, name: s.name })))
